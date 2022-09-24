@@ -3,6 +3,11 @@ body {
   font-weight: 500;
 }
 
+input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
 .authorization {
   &__background {
     width: 100%;
@@ -19,4 +24,5 @@ body {
   }
 }
 
-@import "pages/login";
+@import "pages/authorization";
+@import "pages/chats";

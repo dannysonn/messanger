@@ -3,6 +3,11 @@ body {
   font-weight: 500;
 }
 
+input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
 .authorization__background {
   width: 100%;
   height: 100%;
@@ -79,6 +84,56 @@ body {
 .authorization .registration__link a {
   text-decoration: none;
   color: #3369F3;
+}
+
+.chats-sidebar {
+  height: 100%;
+  width: 25vw;
+  overflow-y: scroll;
+  background: #FBFBFB;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.chats-header {
+  display: flex;
+  flex-wrap: wrap;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e54c8, #8f94fb); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  height: 100px;
+  color: #4e54c8;
+}
+.chats-header__search {
+  width: 90%;
+  height: 32px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: #FFFFFF;
+}
+.chats-header__input {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  font-size: 12px;
+  line-height: 12px;
+  border: none;
+  background: none;
+  padding-left: 1vw;
+}
+.chats-header__input::placeholder {
+  color: #4e54c8;
+}
+.chats-header__input:focus {
+  outline: none;
+  color: #4e54c8;
+}
+.chats-header__profile-link {
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 23px 10px 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

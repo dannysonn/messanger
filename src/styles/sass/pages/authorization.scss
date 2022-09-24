@@ -40,7 +40,7 @@
     input {
       width: 280px;
       border: none;
-      border-bottom: 1px solid #3369F3;
+      border-bottom: 1px solid $primary-color;
 
       &:focus {
         outline: none;
@@ -56,7 +56,7 @@
     width: 280px;
     height: 37px;
 
-    background: #3369F3;
+    background: $primary-color;
     border-radius: 8px;
     border: none;
 
@@ -84,7 +84,7 @@
 
       a {
         text-decoration: none;
-        color: #3369F3;
+        color: $primary-color;
       }
     }
   }

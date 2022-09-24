@@ -27,6 +27,10 @@ app.get('/registration', (req, res) => {
     res.render('registration.hbs', {title: 'Registration'});
 });
 
+app.get('/chats', (req, res) => {
+    res.render('chats.hbs', {title: 'Chats'});
+});
+
 app.listen(PORT, () => {
    console.log(`Мой текст в логе после запуска ${PORT}!`);
 });
