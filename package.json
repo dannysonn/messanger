@@ -1,5 +1,18 @@
 {
+  "name": "messanger",
+  "source": "index.html",
+  "scripts": {
+    "start": "node ./src/server.js & npm run sass",
+    "build": "parcel build",
+    "sass": "sass src/styles/sass/main.scss src/styles/css/style.css -w"
+  },
   "devDependencies": {
     "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "handlebars": "^4.7.7",
+    "hbs": "^4.2.0"
   }
 }

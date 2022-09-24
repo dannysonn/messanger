@@ -1,0 +1,91 @@
+@import "../variables";
+
+.authorization {
+
+  &__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 340px;
+    height: auto;
+
+    border-radius: 12px;
+    box-shadow: 0 0 6px #4e54c8;
+    background: #FFFFFF
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 20px;
+    color: $main-text-color;
+
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #authForm {
+    margin-left: 30px;
+    margin-top: 40px;
+
+    label {
+      font-weight: 500;
+      font-size: 9px;
+      line-height: 9px;
+
+      color: #999999;
+    }
+
+    input {
+      width: 280px;
+      border: none;
+      border-bottom: 1px solid #3369F3;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:invalid {
+        color: red;
+      }
+    }
+  }
+
+  &__btn {
+    width: 280px;
+    height: 37px;
+
+    background: #3369F3;
+    border-radius: 8px;
+    border: none;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 159px;
+
+    cursor: pointer;
+  }
+
+  .registration {
+    &__link {
+      margin-top: 14px;
+
+      font-size: 11px;
+      line-height: 11px;
+
+      text-align: center;
+      margin-bottom: 30px;
+
+      a {
+        text-decoration: none;
+        color: #3369F3;
+      }
+    }
+  }
+}

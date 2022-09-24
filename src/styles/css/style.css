@@ -1,0 +1,84 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.authorization__background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e54c8, #8f94fb); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+.authorization__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 6px #4e54c8;
+  background: #FFFFFF;
+}
+.authorization__title {
+  font-size: 20px;
+  line-height: 20px;
+  color: #1E1E1E;
+  text-align: center;
+  margin-top: 50px;
+}
+.authorization #authForm {
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.authorization #authForm label {
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 9px;
+  color: #999999;
+}
+.authorization #authForm input {
+  width: 280px;
+  border: none;
+  border-bottom: 1px solid #3369F3;
+}
+.authorization #authForm input:focus {
+  outline: none;
+}
+.authorization #authForm input:invalid {
+  color: red;
+}
+.authorization__btn {
+  width: 280px;
+  height: 37px;
+  background: #3369F3;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 159px;
+  cursor: pointer;
+}
+.authorization .registration__link {
+  margin-top: 14px;
+  font-size: 11px;
+  line-height: 11px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.authorization .registration__link a {
+  text-decoration: none;
+  color: #3369F3;
+}
+
+/*# sourceMappingURL=style.css.map */
