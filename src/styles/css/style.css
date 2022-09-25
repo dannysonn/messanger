@@ -89,7 +89,7 @@ input {
 .chats-sidebar {
   height: 100%;
   width: 25vw;
-  overflow-y: scroll;
+  border-right: 1px solid #EFEFEF;
   background: #FBFBFB;
   position: fixed;
   top: 0;
@@ -116,7 +116,7 @@ input {
   width: 100%;
   height: 100%;
   align-self: center;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 12px;
   border: none;
   background: none;
@@ -131,9 +131,71 @@ input {
 }
 .chats-header__profile-link {
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 12px;
+  text-decoration: none;
   margin: 23px 10px 0 auto;
+}
+
+.chats-list {
+  padding: 0;
+  margin: 0;
+}
+
+.chat {
+  border-bottom: 1px solid #EFEFEF;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 100%;
+  max-height: 70px;
+  display: flex;
+  list-style: none;
+}
+.chat__item {
+  margin-top: 10px;
+}
+.chat__item .user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.chat__item .user-name {
+  padding-left: 10px;
+  padding-bottom: 4px;
+}
+.chat__item .user-message {
+  padding-left: 10px;
+  color: #999999;
+}
+.chat__item:last-child {
+  margin-left: auto;
+  margin-right: 10px;
+}
+.chat__info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+.chat__messages-count {
+  width: 21px;
+  height: 21px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  background: #4e54c8;
+  border-radius: 50%;
+  align-self: flex-end;
+}
+.chat__messages-count span {
+  vertical-align: middle;
+}
+.chat__time {
+  font-size: 11px;
+  line-height: 13px;
+  color: #999999;
 }
 
 /*# sourceMappingURL=style.css.map */
