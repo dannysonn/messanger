@@ -145,3 +145,40 @@
     color: #999999;
   }
 }
+
+.messages {
+  width: 75vw;
+  margin-left: 25vw;
+  border-bottom: 2px solid #EFEFEF;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+
+    margin: 10px 20px 10px;
+
+    &__avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+
+      margin-right: 10px;
+    }
+  }
+
+  &__settings {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px 10px;
+
+    &:after {
+      content: '\22EE';
+      font-size: 25px;
+    }
+  }
+}

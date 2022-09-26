@@ -1,6 +1,8 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  margin: 0;
 }
 
 input {
@@ -196,6 +198,36 @@ input {
   font-size: 11px;
   line-height: 13px;
   color: #999999;
+}
+
+.messages {
+  width: 75vw;
+  margin-left: 25vw;
+  border-bottom: 2px solid #EFEFEF;
+}
+.messages__header {
+  display: flex;
+  justify-content: space-between;
+}
+.messages .user {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px 10px;
+}
+.messages .user__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.messages__settings {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px 10px;
+}
+.messages__settings:after {
+  content: "⋮";
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
