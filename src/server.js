@@ -31,6 +31,10 @@ app.get('/chats', (req, res) => {
     res.render('chats.hbs', {title: 'Chats'});
 });
 
+app.get('/profile', (req, res) => {
+    res.render('profile.hbs', {title: 'Profile'});
+});
+
 app.listen(PORT, () => {
    console.log(`Мой текст в логе после запуска ${PORT}!`);
 });
