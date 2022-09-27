@@ -201,13 +201,31 @@ input {
 }
 
 .messages {
+  display: flex;
+  flex-direction: column;
   width: 75vw;
   margin-left: 25vw;
-  border-bottom: 2px solid #EFEFEF;
+}
+.messages__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 75vw;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 80px;
 }
 .messages__header {
+  width: 75vw;
+  height: 70px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  border-bottom: 2px solid #EFEFEF;
+  background: #FFFFFF;
 }
 .messages .user {
   display: flex;
@@ -228,6 +246,78 @@ input {
 .messages__settings:after {
   content: "⋮";
   font-size: 25px;
+}
+.messages__friend-container {
+  max-width: 25vw;
+  background: #F8F8F8;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #1E1E1E;
+  margin-left: 20px;
+  margin-top: 30px;
+  padding: 11px;
+}
+.messages__date {
+  text-align: center;
+  font-size: 14px;
+  line-height: 12px;
+  color: #999999;
+  margin-top: 48px;
+}
+.messages__mine-container {
+  max-width: 25vw;
+  font-size: 14px;
+  line-height: 15px;
+  color: #1E1E1E;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 11px;
+  background: #E4EDFD;
+  border-radius: 10px;
+}
+.messages__file {
+  padding-left: 20px;
+}
+.messages__file img {
+  cursor: pointer;
+}
+.messages__footer {
+  width: 75vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  margin: 20px 0 0;
+}
+.messages #addFile {
+  display: none;
+}
+.messages__text {
+  display: flex;
+  align-items: center;
+  width: 63vw;
+  height: 30px;
+  line-height: 30px;
+  outline: none;
+  resize: none;
+  border-radius: 30px;
+  border: none;
+  background-color: #EFEFEF;
+  padding-left: 20px;
+}
+.messages__send-btn {
+  width: 35px;
+  height: 35px;
+  color: #FFFFFF;
+  background-color: #4e54c8;
+  border: none;
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
