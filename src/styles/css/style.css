@@ -377,4 +377,35 @@ input {
   color: #FF0000;
 }
 
+.error {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.error__number {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+  color: #1E1E1E;
+  margin-bottom: 20px;
+}
+.error__comment {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #1E1E1E;
+  margin-bottom: 69px;
+}
+.error__link {
+  font-size: 14px;
+  line-height: 11px;
+  color: #3369F3;
+}
+
 /*# sourceMappingURL=style.css.map */

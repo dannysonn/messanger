@@ -1,8 +1,12 @@
 {
   "name": "messanger",
   "source": "index.html",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "type": "module",
   "scripts": {
-    "start": "node ./src/server.js & npm run sass",
+    "start": "node src/server.js & npm run sass",
     "build": "parcel build",
     "sass": "sass src/styles/sass/main.scss src/styles/css/style.css -w"
   },
