@@ -1,14 +1,13 @@
 {
   "name": "messanger",
-  "source": "index.html",
   "engines": {
     "node": ">=12.0.0"
   },
-  "type": "module",
   "scripts": {
-    "start": "node src/server.js & npm run sass",
-    "build": "parcel build",
-    "sass": "sass src/styles/sass/main.scss src/styles/css/style.css -w"
+    "dev": "parcel src/index.html src/pages/**/*.html",
+    "build": "parcel build src/index.html src/pages/**/*.html",
+    "start": "parcel build src/index.html && node src/server.js",
+    "sass": "sass src/styles/sass/main.scss src/styles/css/style.css"
   },
   "devDependencies": {
     "parcel": "^2.7.0"
@@ -17,6 +16,7 @@
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
     "handlebars": "^4.7.7",
-    "hbs": "^4.2.0"
+    "hbs": "^4.2.0",
+    "parcel-transformer-hbs": "^1.0.3"
   }
 }

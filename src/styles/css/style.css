@@ -26,22 +26,24 @@ input {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 340px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 0 6px #4e54c8;
   background: #FFFFFF;
+  transform: translate(-50%, -50%);
 }
 .authorization__title {
+  margin-top: 50px;
   font-size: 20px;
   line-height: 20px;
   color: #1E1E1E;
   text-align: center;
-  margin-top: 50px;
 }
 .authorization #authForm {
-  margin-left: 30px;
   margin-top: 40px;
 }
 .authorization #authForm label {
@@ -64,28 +66,27 @@ input {
 .authorization__btn {
   width: 280px;
   height: 37px;
-  background: #3369F3;
-  border-radius: 8px;
-  border: none;
+  margin-top: 159px;
   font-weight: 500;
   font-size: 13px;
   line-height: 13px;
   color: #FFFFFF;
   text-align: center;
-  margin-left: 30px;
-  margin-top: 159px;
+  background: #3369F3;
+  border-radius: 8px;
+  border: none;
   cursor: pointer;
 }
 .authorization .registration__link {
   margin-top: 14px;
+  margin-bottom: 30px;
   font-size: 11px;
   line-height: 11px;
   text-align: center;
-  margin-bottom: 30px;
-}
-.authorization .registration__link a {
   text-decoration: none;
   color: #3369F3;
+  background: none;
+  border: none;
 }
 
 .chats-sidebar {
