@@ -1,4 +1,5 @@
-let loginTmpl = `<main class="authorization__background">
+// language=hbs
+export let loginTmpl = `<main class="authorization__background">
     <div class="authorization">
         <div class="authorization__wrapper">
             <h1 class="authorization__title">Sign in</h1>

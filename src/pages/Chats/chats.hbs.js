@@ -1,3 +1,4 @@
+// language=hbs
 export let chatsTmpl = `<aside class="chats-sidebar">
     <nav class="chats-header">
         <a href="/profile" class="chats-header__profile-link">Profile link</a>
@@ -7,26 +8,9 @@ export let chatsTmpl = `<aside class="chats-sidebar">
         </form>
     </nav>
     <ul class="chats-list">
-        
-            <li class="chat">
-                <div class="chat__item">
-                    <img class="user-avatar" src="{{userAvatar}}" alt="">
-                </div>
-                <div class="chat__item">
-                    <span class="user-name">{{username}}</span>
-                    <br>
-                    <span class="user-message">{{message}}</span>
-                </div>
-                <div class="chat__item">
-                    <div class="chat__info">
-                        <div class="chat__time">{{time}}</div>
-                        <div class="chat__messages-count">
-                            <span>{{messagesCount}}</span>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        
+        {{#each store.chats}}
+            {{> chat }}
+        {{/each}}
     </ul>
 </aside>
 

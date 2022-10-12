@@ -1,7 +1,4 @@
 import {loginTmpl} from "./login.hbs";
+import {renderDom} from "../../utils/render";
 
-let root = document.getElementById('root');
-let html = Handlebars.compile(loginTmpl);
-
-
-root.insertAdjacentHTML('afterbegin', html({}));
+renderDom(loginTmpl)
