@@ -1,4 +1,5 @@
-let registrationTmpl = `<main class="authorization__background">
+// language=hbs
+export let registrationTmpl = `<main class="authorization__background">
     <div class="authorization">
         <div class="authorization__wrapper">
             <h1 class="authorization__title">Sign up</h1>

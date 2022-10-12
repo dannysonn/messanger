@@ -333,7 +333,10 @@ input {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.profile__wrapper .content__item {
+.profile__wrapper__item-data {
+  color: #999999;
+}
+.profile__item {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -341,11 +344,8 @@ input {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-.profile__wrapper .content__item:last-child {
+.profile__item:last-child {
   border: none;
-}
-.profile__wrapper .content__item-data {
-  color: #999999;
 }
 .profile__header {
   text-align: center;
