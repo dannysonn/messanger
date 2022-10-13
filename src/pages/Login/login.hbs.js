@@ -19,7 +19,7 @@ export let loginTmpl = `<main class="authorization__background">
                 </div>
             </form>
 
-            <button class="authorization__btn">Log in</button>
+            {{> button text="Log in"}}
 
             <button class="registration__link">No account?</button>
         </div>
